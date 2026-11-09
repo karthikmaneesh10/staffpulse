@@ -9,13 +9,13 @@ databases:
     databaseName: staffpulse_db
     user: staffpulse_user
     plan: free
-    region: oregon # or frankfurt, singapore, ohio
+    region: oregon
 
 services:
   # 2. Python FastAPI Backend Service
   - type: web
     name: staffpulse-backend
-    env: python
+    runtime: python
     plan: free
     region: oregon
     buildCommand: "pip install --upgrade pip && pip install -r backend/requirements.txt"
@@ -31,8 +31,9 @@ services:
         value: 10000
 
   # 3. React Frontend Static Site
-  - type: static
+  - type: web
     name: staffpulse-frontend
+    runtime: static
     plan: free
     region: oregon
     buildCommand: "cd frontend && npm install && npm run build"
@@ -47,4 +48,3 @@ services:
           type: web
           name: staffpulse-backend
           property: host
-
