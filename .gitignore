@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/__pycache__/
+app/__pycache__/
+*.pyc
+
+# Local Databases & Logs
+*.db
+*.sqlite3
+*.log
+
+# Build artifacts
+frontend/dist/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
