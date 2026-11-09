@@ -32,3 +32,4 @@ EXPOSE 10000
 
 # Start Uvicorn ASGI server
 CMD ["sh", "-c", "cd backend && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
+

@@ -6,3 +6,4 @@ frontend/dist/
 *.db
 *.sqlite3
 .git/
+
