@@ -8,18 +8,14 @@ This guide walks you through deploying **StaffPulse** (React Frontend + FastAPI 
 
 Render can automatically provision the **PostgreSQL database**, the **FastAPI Backend**, and the **React Frontend** together using the included [`render.yaml`](file:///c:/Users/Admin/Desktop/task%20track/render.yaml) file.
 
-### Step 1: Push your code to GitHub or GitLab
-1. Initialize a git repository if not already done:
+### Step 1: Create the GitHub Repository & Push
+1. Open your browser and create a new repository on GitHub:
+   👉 **[https://github.com/new](https://github.com/new)**
+   - **Repository name**: `staffpulse`
+   - **Visibility**: Public (or Private)
+   - Leave "Initialize with README" **unchecked** (we already have everything committed).
+2. Push your project to GitHub (the remote has already been configured for you):
    ```bash
-   git init
-   git add .
-   git commit -m "Initial commit for StaffPulse"
-   ```
-2. Create a new repository on [GitHub](https://github.com/new) called `staffpulse`.
-3. Push your repository:
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/staffpulse.git
-   git branch -M main
    git push -u origin main
    ```
 
